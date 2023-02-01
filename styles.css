@@ -26,8 +26,8 @@ body {
     display: flex;
     flex-direction: row;
     width: 600px;
-    margin: 0 auto;
     height: 450px;
+    margin: 0 auto;
     justify-content: center;
     margin-top: 250px;
     background-color: var(--white-color);
@@ -131,3 +131,35 @@ button:hover {
 .attribution a { 
     color: hsl(228, 45%, 44%);
  }
+
+ /* @media (max-width: 1000px) {
+    .shop {
+    grid-template-columns: repeat(2, 223px);
+    }
+} */
+@media (max-width: 375px) {
+    .container {
+        flex-direction: column;
+        width: 340px;
+        height: 750px;
+        margin-top: 20px;
+    }
+
+    .image {
+        width: 340px;
+        height: 50%;
+        background-image: inherit;
+    }
+
+    .price {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+        margin: 25px auto;
+        position: relative;
+    }
+} 
