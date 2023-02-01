@@ -144,11 +144,15 @@ button:hover {
         height: 750px;
         margin-top: 20px;
     }
-
+    /* picture {
+        display: flex;
+        justify-content: center;
+    } */
     .image {
-        width: 340px;
-        height: 50%;
+        width: 100%; 
+        height: 46%;
         background-image: inherit;
+
     }
 
     .price {
