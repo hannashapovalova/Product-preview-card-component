@@ -8,6 +8,19 @@ body {
     background-color: hsl(30, 38%, 92%);
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 0 auto;
+    height: 300px;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+img {
+    height: 300px;
+}
 .product_name {
     font-family: 'Fraunces', serif;
 
