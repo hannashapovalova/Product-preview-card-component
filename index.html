@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
@@ -11,11 +12,11 @@
   <title>Product preview card component</title>
 </head>
 <body>
-  <main class="product_card">
+  <main class="container">
     <div class="image">
       <img src="images/image-product-desktop.jpg" alt="Parfume">
     </div>
-    <div class="product_information">
+    <div class="product_card">
       <h2 class="product_type">
         Perfume
       </h2>
@@ -26,9 +27,22 @@
         A floral, solar and voluptuous interpretation composed by Olivier Polge, 
        Perfumer-Creator for the House of CHANEL.
       </p>
-      <span class="price_discount"> $149.99</span>
-      <span class="price_full">$169.99</span>
-      <button>Add to Cart</button>
+      <div class="price">
+        <div class="price_discount">
+          $149.99
+        </div>
+        <div class="price_full">
+          $169.99
+        </div>
+      </div>
+      <button>
+        <span class="material-symbols-outlined">
+          shopping_cart
+          </span>
+          <p>
+            Add to Cart
+          </p>
+      </button>
     </div>
   </main>
   <footer>
