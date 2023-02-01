@@ -1,3 +1,13 @@
+:root {
+    --main-green-color: hsl(158, 36%, 37%);
+    --dark-text-color: hsl(212, 21%, 14%);
+    --light-text-color: hsl(228, 12%, 48%);
+    --white-color: hsl(0, 0%, 100%);
+    --main-font-family: 'Montserrat', sans-serif;
+    --second-font-family: 'Fraunces', serif;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +16,11 @@
 
 body {
     background-color: hsl(30, 38%, 92%);
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--main-font-family);
+    color: var(--dark-text-color);
 }
+
+/* PRODUCT CARD */
 
 .container {
     display: flex;
@@ -17,7 +30,7 @@ body {
     height: 450px;
     justify-content: center;
     margin-top: 250px;
-    background-color: #fff;
+    background-color: var(--white-color);
     border: 1px solid rgba(199, 199, 199, 0.1);
     border-radius: 10px;
     overflow: hidden;
@@ -32,15 +45,15 @@ img {
 }
 
 .product_type {
+    color: var(--light-text-color);
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 8px;
     font-size: 14px;
-    opacity: 0.7;
 }
 
 .product_name {
-    font-family: 'Fraunces', serif;
+    font-family: var(--second-font-family);
     font-weight: 700;
     padding: 20px 0;
     font-size: 30px;
@@ -50,8 +63,9 @@ img {
 .product_discription {
     font-size: 14px;
     line-height: 25px;
-    opacity: 0.7;
+    color: var(--light-text-color);
 }
+
 .price {
     display: flex;
     flex-direction: row;
@@ -61,29 +75,29 @@ img {
 }
 
 .price_discount {
-    font-family: 'Fraunces', serif;
+    font-family: var(--second-font-family);
     font-weight: 700;
     font-size: 30px;
-    color: hsl(158, 36%, 37%);
+    color: var(--main-green-color);
 }
 
 .price_full {
     text-decoration: line-through;
-    opacity: 0.7;
+    color: var(--light-text-color);
     padding-left: 25px;
     font-size: 14px;
 }
 
 button {
-    background-color: hsl(158, 36%, 37%);
+    background-color: var(--main-green-color);
     padding: 15px;
     border-radius: 10px;
     border: none;
-    color:#fff;
+    color: var(--white-color);
     width: 100%;
     cursor: pointer;
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--main-font-family);
     align-items:center;
     display: flex;
     justify-content: center;
@@ -95,23 +109,8 @@ button {
     padding: 0 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* FOOTER */
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -121,6 +120,7 @@ button {
     width: 100%;
     margin-bottom: 25px;
 }
+
 .attribution a { 
     color: hsl(228, 45%, 44%);
  }
