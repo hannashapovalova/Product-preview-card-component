@@ -29,11 +29,15 @@ body {
     height: 450px;
     margin: 0 auto;
     justify-content: center;
-    margin-top: 250px;
+    margin-top: 200px;
     background-color: var(--white-color);
     border: 1px solid rgba(199, 199, 199, 0.1);
     border-radius: 10px;
     overflow: hidden;
+}
+
+.image {
+  width: 50%;
 }
 
 img {
@@ -42,6 +46,7 @@ img {
 
 .product_card {
     padding: 30px;
+    width: 50%;
 }
 
 .product_type {
