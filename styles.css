@@ -25,7 +25,7 @@ body {
 .container {
     display: flex;
     flex-direction: row;
-    width: 600px;
+    max-width: 600px;
     height: 450px;
     margin: 0 auto;
     justify-content: center;
@@ -107,8 +107,7 @@ button {
 }
 
 button:hover {
-    filter: brightness(85%);
-   
+    background-color: #1f523f;
 }
 
 .material-symbols-outlined {
@@ -132,23 +131,56 @@ button:hover {
     color: hsl(228, 45%, 44%);
  }
 
+ @media (max-width: 630px) {
+    .container {
+      flex-direction: column;
+      width: 340px;
+      height: 750px;
+      margin-top: 20px;
+    }
+  
+    .image {
+      position: relative;
+      width: 100%;
+      height: 300px;
+    }
+  
+    .product_card {
+      width: 100%;
+    }
+
+    .price {
+      padding-top: 20px;
+      padding-bottom: 10px;
+    }
+
+    .attribution { 
+      font-size: 11px; 
+      text-align: center; 
+      margin: 25px auto;
+      position: relative;
+    }
+  }
+  
+
+
  /* @media (max-width: 1000px) {
     .shop {
     grid-template-columns: repeat(2, 223px);
     }
 } */
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
     .container {
         flex-direction: column;
         width: 340px;
         height: 750px;
         margin-top: 20px;
-    }
+    } */
     /* picture {
         display: flex;
         justify-content: center;
     } */
-    .image {
+    /* .image {
         width: 100%; 
         height: 46%;
         background-image: inherit;
@@ -166,4 +198,5 @@ button:hover {
         margin: 25px auto;
         position: relative;
     }
-} 
+}  */
+
